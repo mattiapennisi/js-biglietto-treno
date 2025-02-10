@@ -13,9 +13,9 @@
 
 // Chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
 
-userKm = prompt('Quanti chilometri vuoi percorrere?')
+userKm = parseInt(prompt('Quanti chilometri vuoi percorrere?'))
 
-userAge = prompt('Quanti anni hai?')
+userAge = parseInt(prompt('Quanti anni hai?'))
 
 console.log(userKm);
 
