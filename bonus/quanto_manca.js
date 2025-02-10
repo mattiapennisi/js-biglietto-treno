@@ -1,6 +1,6 @@
-// QUANTO MANCA: Stabilire l'ora attuale e attraverso una operazione matematica stabilire i minuti mancanti allo scoccare della prossima ora.  Oltre a Math ci sono anche altre funzionalitá di javascript (built-in) che possiamo usare senza installazioni come ad esempio le funzioni dell'oggetto Date.
+// QUANTO MANCA: 
 
-// Variabile che genera le attuali data e ora
+// Variabili che generano l'ora
 
 let date = new Date()
 
@@ -10,6 +10,8 @@ let minutes = date.getMinutes()
 
 let seconds = date.getSeconds()
 
+// Calcolo quanti minuti mancano alla prossima ora e lo stampo a schermo
+
 let minutesDifference = 60 - minutes
 
-alert(`Sono le ${hours}:${minutes}:${seconds}. Mancano ${minutesDifference} minuti alla prossima ora.`)
+alert(`Sono le ${hours}:${minutes}:${seconds}\n\nMancano ${minutesDifference} minuti alla prossima ora.`)
