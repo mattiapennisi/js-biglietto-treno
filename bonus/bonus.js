@@ -20,7 +20,8 @@ console.log(userNumber)
 let randomNumber = Math.floor(Math.random()*9)+1
 
 console.log(randomNumber)
-alert(randomNumber)
+
+alert(`Il pc ha scelto ${randomNumber}`)
 
 // Somma il numero dell'utente e quello del pc
 
@@ -39,12 +40,15 @@ console.log(isEven)
 if (userChoice == 'pari' && isEven == 0) {
     alert('Hai vinto!')
 }
-else if (userChoice == 'dispari' && isEven == 1) {
+
+if (userChoice == 'pari' && isEven == 1) {
     alert('Hai perso!')
 }
-else if (userChoice == 'pari' && isEven == 0) {
+
+if (userChoice == 'dispari' && isEven == 0) {
     alert('Hai perso!')
 }
-else if (userChoice == 'dispari' && isEven == 1) {
+
+if (userChoice == 'dispari' && isEven == 1) {
     alert('Hai vinto!')
 }
