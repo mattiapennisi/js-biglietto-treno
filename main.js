@@ -13,10 +13,26 @@
 
 // Chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
 
-userKm = parseInt(prompt('Quanti chilometri vuoi percorrere?'))
+// userKm = parseInt(prompt('Quanti chilometri vuoi percorrere?'))
 
-userAge = parseInt(prompt('Quanti anni hai?'))
+// userAge = parseInt(prompt('Quanti anni hai?'))
+
+userKm = 50
+
+userAge = 20
 
 console.log(userKm);
 
 console.log(userAge);
+
+kmPrice = (userKm * 0.21) 
+
+if (userAge<18) {
+    agePrice = kmPrice * 20 / 100
+} else if (userAge >= 65) {
+    agePrice = kmPrice * 40 / 100
+} else {
+    agePrice = kmPrice
+}
+
+console.log(agePrice);
